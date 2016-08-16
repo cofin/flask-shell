@@ -1,0 +1,8 @@
+Flask
+gunicorn
+Flask-SQLAlchemy
+redis
+celery
+psycopg2
+Flask-WTF
+WTForms
