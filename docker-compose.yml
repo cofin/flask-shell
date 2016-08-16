@@ -7,7 +7,7 @@ services:
       gunicorn -b 0.0.0.0:8000
         --access-logfile -
         --reload
-        "[].app:bootstrap()"
+        "app.run:bootstrap()"
     environment:
       PYTHONUNBUFFERED: 'true'
     volumes:

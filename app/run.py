@@ -1,4 +1,5 @@
 from flask import Flask
+from app.views import page
 
 
 def bootstrap():
@@ -6,13 +7,6 @@ def bootstrap():
     app.config.from_object('config.settings')
     app.config.from_pyfile('settings.py')
 
-    @app.route('/')
-    def index():
-        """
-        Render a Hello World response.
-
-        :return: Flask response
-        """
-        return app.config['HELLO']
+    app.register_blueprint(page)
 
     return app
