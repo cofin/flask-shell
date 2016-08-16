@@ -34,7 +34,7 @@ pip-delete-this-directory.txt
 docs/_build/
 
 # dotenv
-#.env # This should be excluded normally
+.env
 
 # OS and editor files
 .DS_Store
