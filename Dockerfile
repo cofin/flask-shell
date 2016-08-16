@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "[app].app:bootstrap()"
+CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "app.run:bootstrap()"
