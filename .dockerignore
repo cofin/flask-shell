@@ -1,0 +1,6 @@
+.env_example
+instance/settings.py_example
+__pycache__/
+*.py[cod]
+.git
+.dockerignore

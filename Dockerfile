@@ -1,5 +1,5 @@
 FROM python:latest
-MAINTAINER Cody Fincher <cody.fincher@gmail.com
+MAINTAINER Cody Fincher <cody.fincher@gmail.com>
 
 ENV INSTALL_PATH /src
 RUN mkdir -p $INSTALL_PATH
@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "app.run:bootstrap()"
+CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "app.app:create_app()"
