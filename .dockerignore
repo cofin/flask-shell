@@ -3,4 +3,13 @@ instance/settings.py_example
 __pycache__/
 *.py[cod]
 .git
-.dockerignore
+/dist/
+/build/
+*.swp
+*.swo
+*.pyc
+.eggs/*
+/*.egg-info
+/*.egg
+.DS_Store
+
