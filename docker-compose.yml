@@ -21,6 +21,8 @@ services:
       - '6379:6379'
 
   website:
+    stdin_open: true
+    tty: true
     env_file:
       - '.env'
     build: .
